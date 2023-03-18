@@ -14,16 +14,6 @@ buildscript {
     }
 }
 
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            from components.java
-        }
-    }
-    repositories {
-        mavenLocal()
-    }
-}
 
 allprojects {
     repositories {
