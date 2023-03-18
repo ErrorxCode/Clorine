@@ -5,9 +5,3 @@ before_install:
   - sdk use java 17.0.0-open
   - jshell --version
   - java --version
-  
-install:
-  - echo "Running a custom install command"
-  - chmod +x gradlew
-  - ./gradlew :Clorine:clean
-  - ./gradlew :Clorine:publishToMavenLocal
