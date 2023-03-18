@@ -9,4 +9,4 @@ before_install:
 install:
   - echo "Running a custom install command"
   - chmod +x gradlew
-  - ./gradlew clean install -Pgroup=com.github.ErrorxCode -Pversion=v1.0-test
+  - ./gradlew build
