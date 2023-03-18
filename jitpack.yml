@@ -6,6 +6,6 @@ before_install:
   - jshell --version
   - java --version
   
-  install:
-   - echo "Running a custom install command"
-   - ./gradlew clean -Pgroup=com.github.ErrorxCode -Pversion=v1.0-test -xtest publishToMavenLocal
+install:
+  - echo "Running a custom install command"
+  - ./gradlew clean install -Pgroup=com.github.ErrorxCode -Pversion=v1.0-test -xtest
