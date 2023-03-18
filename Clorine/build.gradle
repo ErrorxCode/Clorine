@@ -1,20 +1,15 @@
 plugins {
     id 'java-library'
-    id 'maven'
 }
-
-group = 'com.github.ErrorxCode'
-version = '1.0-alpha'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_16
     targetCompatibility = JavaVersion.VERSION_16
 }
 
-publishing {
-    publications {
-        maven(MavenPublication) {
-		from components.java
-        }
-    }
+dependencies {
+    implementation 'org.jetbrains:annotations:15.0'
+    implementation 'com.github.instagram4j:instagram4j:2.0.7'
+    implementation 'com.github.ErrorxCode:JSON-java-port:20220320'
+    implementation 'com.github.ErrorxCode:AsyncTask:1.0'
 }
