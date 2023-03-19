@@ -17,14 +17,12 @@ public class Clorine {
      */
     public static Cache createOrOpen(int capacity,String name,File directory){
         var cacheDir = new File(directory,name);
-        try {
-            cacheDir.createNewFile();
+        if (cacheDir.mkdir())
             return new Cache(capacity,cacheDir);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        else
+            throw new RuntimeException("You might have already created a cache with this name or do not have permission to create a cache in this directory");
     }
-
+    
     /**
      * Delete a cache
      * @param name the name of the cache
