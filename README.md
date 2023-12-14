@@ -111,7 +111,7 @@ If you like my work then you can suppot me by giving this repo a ⭐. You can ch
 ## You may also like...
 
 - [CloremDB](https://github.com/Clorabase/CloremDB) - A realm like embadded database
-- [ClorographDB](https://github.com/amitmerchant1990/correo) - CLorabase offline graph database
+- [ClorographDB](https://github.com/ErrorxCode/ClorographDB) - CLorabase offline graph database
 
 
 ## Powered by 💓
